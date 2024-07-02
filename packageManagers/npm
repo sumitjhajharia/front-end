@@ -1,0 +1,50 @@
+Semantic Versioning - 5.22.32 (Major.Minor.Patch)
+==> for bug fixes: update patch
+==> for new features which is compatible with previour version: update minor
+==> for breaking/Non-compatible changes ==> update MAJOR
+_____________________________________________________________________________________
+
+Specifiy Versioing: 
+5.21.8 : EXACT
+>5.21.8 : greater than this
+^5.21.8 : for compatible change (Minor & patch)
+~5.21.8 : for minor level change
+
+_____________________________________________________________________________________
+PRE RELEASE VERSIONS:
+
+1.0.0.alpha < 1.0.0.alpha.1 < 1.0.0.beta < 1.0.0.beta.2 < 1.0.0.rc.1 > 1.0.0
+
+_____________________________________________________________________________________
+Dependencies Vs Dev-Dependencies
+
+
+
+==> Dependencies : if package A is installed as depdency, is depedent on B & C packages, at time of installing B &C dependencies installed too
+==> Dev-Dependencies: installed if use npm i(for OWN Project) || not installed npm install --production || If package A is insatlled as depdency & have dev-depedencies on B & C, NOT TO BE INSATLLED
+
+package.json --> dependencies: { B,C} & devDependencies: { E, F}
+package B -->  dependencies: { B1  } & devDependencies: { BD1, BD2 }
+package E -->  dependencies: { E1} & devDependencies: { ED1, ED2 }
+
+if run npm install --> install B,C,E,F & it's package dependencies : B1, E1 BUT FOR dev-dependencies: it'll also install ED1,ED2 and not install BD1,BD2 as it's not included as dev-dependencies
+
+_____________________________________________________________________________________
+
+
+_____________________________________________________________________________________
+
+
+_____________________________________________________________________________________
+
+
+_____________________________________________________________________________________
+
+
+_____________________________________________________________________________________
+
+
+_____________________________________________________________________________________
+
+
+_____________________________________________________________________________________
