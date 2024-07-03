@@ -18,8 +18,6 @@ PRE RELEASE VERSIONS:
 _____________________________________________________________________________________
 Dependencies Vs Dev-Dependencies
 
-
-
 ==> Dependencies : if package A is installed as depdency, is depedent on B & C packages, at time of installing B &C dependencies installed too
 ==> Dev-Dependencies: installed if use npm i(for OWN Project) || not installed npm install --production || If package A is insatlled as depdency & have dev-depedencies on B & C, NOT TO BE INSATLLED
 
@@ -29,12 +27,15 @@ package E -->  dependencies: { E1} & devDependencies: { ED1, ED2 }
 
 if run npm install --> install B,C,E,F & it's package dependencies : B1, E1 BUT FOR dev-dependencies: it'll also install ED1,ED2 and not install BD1,BD2 as it's not included as dev-dependencies
 
+IF USING STANDALONE PACKAGE - NOT TO BE SHARED - ADD ANY WAY (DEV OR DEPENDENCIES )
+IF BUILD SHAREABLE PACKAGE - whatever IS NEEDED IN COMPLIED CODE, ONLY ADD THEM AS DEPENDENCIES ALL OTHER AS DEV-DEPENDENCIES
 _____________________________________________________________________________________
 
-
+npm view <package> 
+npm view <package> versions
 _____________________________________________________________________________________
 
-
+npm audit
 _____________________________________________________________________________________
 
 
